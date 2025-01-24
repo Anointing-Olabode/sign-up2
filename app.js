@@ -15,7 +15,7 @@ const app = express();
 const SECRET_KEY = process.env.JWT_SECRET;
 
 // Middleware to enable Cross-Origin Resource Sharing for all routes
-app.use(cors());
+app.use(cors({ origin: 'https://authentication-app-4xfs.onrender.com'}));
 
 // Middleware to parse incoming JSON request bodies
 app.use(express.json());
